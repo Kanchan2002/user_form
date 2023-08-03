@@ -6,11 +6,11 @@ import UsersList from './Components/users/UserList';
 function App() {
   const [usersList, setUsersList] = useState([]);
 
-  const addUserHandler = (uName, uAge) => {
+  const addUserHandler = (uName,ucollege, uAge) => {
     setUsersList((prevUsersList) => {
       return [
         ...prevUsersList,
-        { name: uName, age: uAge, id: Math.random().toString() },
+        { name: uName,college:ucollege, age: uAge, id: Math.random().toString() },
       ];
     });
   };
@@ -24,3 +24,4 @@ function App() {
 }
 
 export default App;
+
